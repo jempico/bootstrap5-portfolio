@@ -1,0 +1,113 @@
+@use '../custom' as *;
+
+body {
+    font-family: 'Lato', arial, sans-serif;   
+    color: $text-color;
+    background: $background;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6  {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: $color;
+}
+
+a {
+    color: $color-2;
+    @include transition (all 0.4s ease-in-out);
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+        color: darken($color-2, 10%);
+    }
+    &:focus {
+        text-decoration: none;
+    }
+}
+
+.btn, a.btn {
+    @include transition (all 0.4s ease-in-out);
+    font-family: 'Montserrat', arial, sans-serif;
+    padding: 8px 16px;
+    font-weight:bold;
+    .svg-inline--fa {
+        margin-right: 5px;
+        position: relative;
+        top: -2px;
+    }
+    &:hover {
+	    text-decoration: none;
+    }
+
+    &:focus {
+        color: #fff;
+        @include box-shadow(none);
+    }
+}
+
+a.btn-cta-primary, .btn-cta-primary { 
+    background: $btn-color;
+    border: 1px solid $btn-color;
+    color: #fff;
+    font-weight:600;
+    text-transform: uppercase;
+    &:hover {
+        background: darken($btn-color, 5%);
+        border: 1px solid darken($btn-color, 5%);
+        color: #fff;
+    }
+}
+
+a.btn-cta-secondary,  .btn-cta-secondary { 
+    background: $btn-color-2;
+    border: 1px solid $btn-color-2;
+    color: #fff;
+    font-weight:600;
+    text-transform: uppercase;
+    &:hover, &:not(:disabled):not(.disabled):active:focus {
+        background: darken($btn-color-2, 5%);
+        border: 1px solid darken($btn-color-2, 5%);
+        color: #fff;
+        @include box-shadow(none);
+    }
+}
+
+
+.text-highlight {
+    color: darken($color, 30%);
+}
+
+.badge-theme {
+    background: $color-2;
+    font-size: 12px;
+    color: #fff;
+    @include border-radius(2px);
+}
+
+a.dotted-link {
+    border-bottom: 1px dotted $color;
+    color: $color;
+    &:hover {
+        text-decoration: none;
+        color: darken($color, 20%);
+    }
+}
+
+/* List section */
+.list {
+    ul li{
+        margin-bottom: 10px;
+        .svg-inline--fa {
+            margin-right: 5px;
+        }
+        a {
+            color: $color;
+            &:hover {
+                color: darken($color, 20%);
+            }
+        }
+    }
+}

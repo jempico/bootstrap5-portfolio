@@ -14,13 +14,9 @@ $smoky-white: #f5f5f5;
 $background: #DAE3E7;
 $heart: #fb866a;
 
-$primary: $color;
-$secondary: $color-2;
-$success:       $btn-color;
-$info:          $btn-color-2;
-$warning:       $smoky-white;
-$danger:        $heart;
-$light:         $lighter-grey;
-$dark:          $darker-grey;
+$dm-background: #17191c;
+$dm-text-color: rgba(256, 256, 256, 0.9);
+$dm-text-color-secondary: rgba(256, 256, 256, 0.7);
+
 // Import Bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap";

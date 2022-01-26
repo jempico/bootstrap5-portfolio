@@ -1,0 +1,38 @@
+@use '../custom' as *;
+/* Testimonials section */
+.testimonials {
+    .item {
+        margin-bottom: 30px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        .quote {
+            color: $text-color-secondary;
+            font-size: 16px;
+            border-left: 5px solid lighten($color-2, 30%);
+            padding: 5px 15px;
+            margin-bottom: 15px;
+            p {
+	            margin-bottom: 0;
+            }
+            
+            .svg-inline--fa {
+                color: lighten($color-2, 20%);
+                margin-right: 15px;
+            }
+            
+        }
+        .source {
+            font-size: 14px;
+            padding-left: 20px;
+            font-weight: 500;
+            .name {
+                color: lighten($color, 10%);
+                font-weight: 600;
+            }
+            .title {
+                color: $grey;
+            }
+        }
+    }
+}
