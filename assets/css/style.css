@@ -11118,7 +11118,7 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-/* ======= Sections======= */
+/* Sections */
 .section {
   margin-bottom: 30px;
 }
@@ -11272,6 +11272,9 @@ a.dotted-link:hover {
 .info li:last-child {
   margin-bottom: 0;
 }
+.info a, .info span {
+  margin-left: 20px;
+}
 
 /* Education section */
 .education .item {
@@ -11321,7 +11324,7 @@ a.dotted-link:hover {
   font-weight: normal;
 }
 
-/* ======= Footer ======= */
+/* Footer */
 .footer {
   background: #32383e;
   color: #fff;
@@ -11352,11 +11355,22 @@ a.dotted-link:hover {
 
 .ghfeed {
   height: 500px;
-  /*     @include reset-box-sizing();
-   */
 }
 
-/* ======= Header ======= */
+.credits {
+  font-size: 14px;
+  padding-left: 20px;
+  font-weight: 500;
+}
+.credits .name {
+  color: #939ea9;
+  font-weight: 600;
+}
+.credits .title {
+  color: #999;
+}
+
+/* Header */
 .header {
   padding: 30px 0;
   background: #f5f5f5;
@@ -11364,6 +11378,7 @@ a.dotted-link:hover {
 }
 .header .btn {
   font-weight: bold;
+  margin-top: 20px;
 }
 .header .profile-image {
   margin-right: 30px;
@@ -11492,15 +11507,6 @@ a.dotted-link:hover {
   text-transform: uppercase;
   color: #fff;
   background-color: #479FC8;
-  /*                 @include transform (rotate(45deg) translate3d(0,0,0));
-                  &:before, &:after {
-                      content: '';
-                      position: absolute;
-                      bottom: -5px;
-                      border-top: 5px solid darken($btn-color-2, 20%);
-                      border-left: 5px solid transparent;
-                      border-right: 5px solid transparent;
-                  } */
 }
 .latest .has-ribbon .ribbon .text:before {
   left: 0;
@@ -11562,37 +11568,37 @@ a.dotted-link:hover {
   top: 0;
 }
 
-/* Testimonials section */
-.testimonials .item {
+/* Recommentationa section */
+.recommendations .item {
   margin-bottom: 30px;
 }
-.testimonials .item:last-child {
+.recommendations .item:last-child {
   margin-bottom: 0;
 }
-.testimonials .item .quote {
+.recommendations .item .quote {
   color: #666;
   font-size: 16px;
   border-left: 5px solid #9fdeb7;
   padding: 5px 15px;
   margin-bottom: 15px;
 }
-.testimonials .item .quote p {
+.recommendations .item .quote p {
   margin-bottom: 0;
 }
-.testimonials .item .quote .svg-inline--fa {
+.recommendations .item .quote .svg-inline--fa {
   color: #79d19a;
   margin-right: 15px;
 }
-.testimonials .item .source {
+.recommendations .item .source {
   font-size: 14px;
   padding-left: 20px;
   font-weight: 500;
 }
-.testimonials .item .source .name {
+.recommendations .item .source .name {
   color: #939ea9;
   font-weight: 600;
 }
-.testimonials .item .source .title {
+.recommendations .item .source .title {
   color: #999;
 }
 

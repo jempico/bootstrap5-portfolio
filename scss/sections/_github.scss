@@ -14,5 +14,17 @@
 
 .ghfeed {
     height: 500px;
-/*     @include reset-box-sizing();
- */}
+}
+
+.credits  {
+    font-size: 14px;
+    padding-left: 20px;
+    font-weight: 500;
+    .name {
+        color: lighten($color, 10%);
+        font-weight: 600;
+    }
+    .title {
+        color: $grey;
+    }
+}

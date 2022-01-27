@@ -75,15 +75,6 @@
                 text-transform: uppercase;
                 color: #fff;           
                 background-color: $btn-color-2;
-/*                 @include transform (rotate(45deg) translate3d(0,0,0));
-                &:before, &:after {
-                    content: '';
-                    position: absolute;
-                    bottom: -5px;
-                    border-top: 5px solid darken($btn-color-2, 20%);
-                    border-left: 5px solid transparent;
-                    border-right: 5px solid transparent;
-                } */
                 &:before {
                     left: 0;
                 }
