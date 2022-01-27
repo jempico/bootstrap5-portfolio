@@ -11386,7 +11386,9 @@ a.dotted-link:hover {
   background: #b0b7bf;
   width: 36px;
   height: 36px;
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 50%;
   color: #fff;
   text-align: center;
