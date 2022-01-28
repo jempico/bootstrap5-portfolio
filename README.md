@@ -27,7 +27,7 @@ To get a local copy up and running follow these simple steps.
 2. Install NPM packages
    ```sh
    npm install
-3. For watching and compilinh SASS type:
+3. For watching and compiling SASS type:
    ```sh
     npm run compile:sass
    ```
